@@ -7,36 +7,36 @@
         <link rel="stylesheet" type="text/css" href="calculator.css" />
     </head>
     <body>
-        <div id="content">
+        <div id="content" >
             <form id="calculator">
                 <div id="input">
-                        <div id="labels">
-                            <label id="first-label" for="first">first number</label>
-                            <label id="second-label" for="second">second number </label>
-                        </div>
-                        <input type="text" id="first" name="number-input"> 
-                        <input type="text" id="second" name="number-input">
+                    <div id="labels">
+                        <label id="first-label" for="first">first number</label>
+                        <label id="second-label" for="second">second number </label>
+                    </div>
+                    <input type="text" id="first" name="number-input"> 
+                    <input type="text" id="second" name="number-input">
                        
                 </div>
                 <div id="radio-buttons">
-                    <input type="radio" id="add-button" name="option" value="Add">
+                    <input type="radio" id="add-button" name="option" value="Add" checked="" onclick="getOperator(); CreateCalculator()">
                         <label for="add-button">Add</label>
-                    <input type="radio" id="subtract-button" name="option" value="Subtract">
+                    <input type="radio" id="subtract-button" name="option" value="Subtract" onclick="getOperator(); CreateCalculator()">
                         <label for="subtract-button">Subtract</label>
-                    <input type="radio" id="multipy-button" name="option" value="Multiply">
+                    <input type="radio" id="multipy-button" name="option" value="Multiply" onclick="getOperator(); CreateCalculator()">
                         <label for="multipy-button">Multiply</label>
-                    <input type="radio" id="divide-button" name="option" value="Divide">
+                    <input type="radio" id="divide-button" name="option" value="Divide" onclick="getOperator(); CreateCalculator()">
                         <label for="divide-button">Divide</label>
                 </div>
                 <div id = "buttons">
-                    <button type="button" id="equals">
+                    <button type="button" id="equals" class="hover-buttons" onclick="calculate()">
                         <label for="equals">=</label>
                     </button>
-                    <button type="button" id="clear">
+                    <button type="button" id="clear" class="hover-buttons" onclick="clearValues()">
                         <label for="clear">Clear</label>
                     </button>
                 </div>
-                <div>The result of -ing first-number and second-number is y</div>
+                <div id="result-text"></div>
             </form>
         </div>
     </body>

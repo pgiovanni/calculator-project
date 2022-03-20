@@ -37,6 +37,8 @@ body {
     margin: 5%;
     padding-left: 10px;
     padding-right: 10px;
+    border-color: transparent;
+    border-width: 1px;
 }
 
 #clear {
@@ -45,6 +47,14 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
+    border-color: transparent;
+    border-width: 1px;
+}
+
+.hover-buttons:hover {
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-color: lightgrey !important;
+    border-width: 1px;
 }
 
 #radio-buttons {

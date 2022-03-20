@@ -13,25 +13,43 @@ class Calculator {
 
     // determine the current operation's label
     getAction() {
-        
+        return operator.getAttribute("label");
     }
 
-    // performa a calculation based on the currently selected operation
-    operate() {}
-
+    // perform a calculation based on the currently selected operation
+    operate() {
+        if(operator.getAttribute("id") === "add-button")
+            return add();
+        if(operator.getAttribute("id") === "subtract-button")
+           return subtract();
+        if(operator.getAttribute("id") === "multiply-button")
+           return multiply();
+        if(this.operator.getAttribute("id") === "divide-button")
+            return divide();      
+        
+    }
+    
     attemptedDivideByZero = false;
 
     // perform addition operation
-    add() {}
+    add() {
+        return firstNumber + secondNumber;
+    }
 
     // perform subtraction operation
-    subtract() {}
+    subtract() {
+        return firstNumber - secondNumber;
+    }
 
     // perform multiplication operation
-    multiply() {}
+    multiply() {
+        return firstNumber * secondNumber;
+    }
 
     // perform divide operation
-    divide() {}
+    divide() {
+        return firstNumber / secondNumber;
+    }
 }
 
 //DO NOT TOUCH THIS LINE OF CODE//
