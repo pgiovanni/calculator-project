@@ -1,7 +1,7 @@
-let calculator = new Calculator(null, null, null);
 
 // setup variables and get a calculator instance
 function CreateCalculator() {
+    let calculator = new Calculator(null, null, null);
     let numberOne = document.getElementById("first").value;
     let numberTwo = document.getElementById("second").value; 
     calculator.firstNumber = numberOne;
