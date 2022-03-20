@@ -1,11 +1,10 @@
 
 // setup variables and get a calculator instance
 function CreateCalculator() {
-    let calculator = new Calculator(null, null, null);
     let numberOne = document.getElementById("first").value;
     let numberTwo = document.getElementById("second").value; 
-    calculator.firstNumber = numberOne;
-    calculator.secondNumber = numberTwo;
+    let operator = getOperator();
+    let calculator = new Calculator(numberOne, numberTwo, operator);
 }
 
 // perform a calculation when the operator button is clicked
