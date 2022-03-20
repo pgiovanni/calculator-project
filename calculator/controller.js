@@ -1,5 +1,7 @@
 // setup variables and get a calculator instance
-function CreateCalculator() {}
+function CreateCalculator() {
+    let calculator = new Calculator;
+}
 
 // perform a calculation when the operator button is clicked
 function calculate() {}

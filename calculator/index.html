@@ -8,18 +8,36 @@
     </head>
     <body>
         <div id="content">
-            <form>
-            <span id="radio-buttons">
-                <input type="radio" id="add-button" name="option" value="Add">
-                    <label for="add-button">Add</label>
-                <input type="radio" id="subtract-button" name="option" value="Subtract">
-                    <label for="subtract-button">Subtract</label>
-                <input type="radio" id="multipy-button" name="option" value="Multiply">
-                    <label for="multipy-button">Multiply</label>
-                <input type="radio" id="divide-button" name="option" value="Divide">
-                    <label for="divide-button">Divide</label>
+            <form id="calculator">
+                <div id="input">
+                        <div id="labels">
+                            <label id="first-label" for="first">first number</label>
+                            <label id="second-label" for="second">second number </label>
+                        </div>
+                        <input type="text" id="first" name="number-input"> 
+                        <input type="text" id="second" name="number-input">
+                       
+                </div>
+                <div id="radio-buttons">
+                    <input type="radio" id="add-button" name="option" value="Add">
+                        <label for="add-button">Add</label>
+                    <input type="radio" id="subtract-button" name="option" value="Subtract">
+                        <label for="subtract-button">Subtract</label>
+                    <input type="radio" id="multipy-button" name="option" value="Multiply">
+                        <label for="multipy-button">Multiply</label>
+                    <input type="radio" id="divide-button" name="option" value="Divide">
+                        <label for="divide-button">Divide</label>
+                </div>
+                <div id = "buttons">
+                    <button type="button" id="equals">
+                        <label for="equals">=</label>
+                    </button>
+                    <button type="button" id="clear">
+                        <label for="clear">Clear</label>
+                    </button>
+                </div>
+                <div>The result of -ing first-number and second-number is y</div>
             </form>
-            <span></span>
         </div>
     </body>
 </html>
