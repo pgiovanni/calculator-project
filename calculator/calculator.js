@@ -18,17 +18,17 @@ class Calculator {
 
     // perform a calculation based on the currently selected operation
     operate() {
-        if(operator.getAttribute("id") === "add-button")
+        if(this.operator.getAttribute("id") === "add-button")
             return add();
-        if(operator.getAttribute("id") === "subtract-button")
+        if(this.operator.getAttribute("id") === "subtract-button")
            return subtract();
-        if(operator.getAttribute("id") === "multiply-button")
+        if(this.operator.getAttribute("id") === "multiply-button")
            return multiply();
         if(this.operator.getAttribute("id") === "divide-button")
             return divide();      
         
     }
-    
+
     attemptedDivideByZero = false;
 
     // perform addition operation
