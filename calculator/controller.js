@@ -5,11 +5,11 @@ function CreateCalculator() {
     let numberTwo = document.getElementById("second").value; 
     let operator = getOperator();
     let calculator = new Calculator(numberOne, numberTwo, operator);
+    console.log(calculator.operator);
 }
 
 // perform a calculation when the operator button is clicked
-function calculate() {
-  calculator.add();        
+function calculate() {       
 }
 
 /**

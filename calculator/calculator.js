@@ -18,15 +18,14 @@ class Calculator {
 
     // perform a calculation based on the currently selected operation
     operate() {
-        if(this.operator.getAttribute("id") === "add-button")
+        if(operator.attribute("id") === "add-button")
             return this.add();
-        if(this.operator.getAttribute("id") === "subtract-button")
+        if(operator.attribute("id") === "subtract-button")
            return this.subtract();
-        if(this.operator.getAttribute("id") === "multiply-button")
+        if(operator.attribute("id") === "multiply-button")
            return this.multiply();
-        if(this.operator.getAttribute("id") === "divide-button")
-            return this.divide();      
-        
+        if(operator.attribute("id") === "divide-button")
+            return this.divide();
     }
 
     attemptedDivideByZero = false;
