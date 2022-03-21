@@ -18,13 +18,13 @@ class Calculator {
 
     // perform a calculation based on the currently selected operation
     operate() {
-        if(this.operator.attribute("id") === "add-button")
+        if(this.operator === "add-button")
             return this.add();
-        if(this.operator.attribute("id") === "subtract-button")
+        if(this.operator === "subtract-button")
            return this.subtract();
-        if(this.operator.attribute("id") === "multiply-button")
+        if(this.operator === "multiply-button")
            return this.multiply();
-        if(this.operator.attribute("id") === "divide-button")
+        if(this.operator === "divide-button")
             return this.divide();
     }
 

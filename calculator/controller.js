@@ -35,7 +35,7 @@ function getOperator() {
     let radioButton = document.getElementsByName("option");
     for(i=0; i < radioButton.length; i++) {
         if(radioButton[i].checked) {
-           return radioButton[i];           
+            return radioButton[i].getAttribute("id");           
         }
     }
 }
