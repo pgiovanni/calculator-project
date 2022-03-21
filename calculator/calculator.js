@@ -18,8 +18,8 @@ class Calculator {
             if(radioButton[i].checked) {
                 return radioButton[i].getAttribute("label");           
             }
+        }
     }
-
     // perform a calculation based on the currently selected operation
     operate() {
         if(this.operator === "add-button")
