@@ -13,22 +13,17 @@ class Calculator {
 
     // determine the current operation's label
     getAction() {
-        let radioButton = document.getElementsByName("option");
-        for(i=0; i < radioButton.length; i++) {
-            if(radioButton[i].checked) {
-                return radioButton[i].getAttribute("label");           
-            }
-        }
+      
     }
     // perform a calculation based on the currently selected operation
     operate() {
-        if(this.operator === "add-button")
+        if(this.operator === "add")
             return this.add();
-        if(this.operator === "subtract-button")
+        if(this.operator === "subtract")
            return this.subtract();
-        if(this.operator === "multiply-button")
+        if(this.operator === "multiply")
            return this.multiply();
-        if(this.operator === "divide-button")
+        if(this.operator === "divid")
             return this.divide();
     }
 
