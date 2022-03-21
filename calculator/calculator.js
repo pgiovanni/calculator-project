@@ -13,7 +13,7 @@ class Calculator {
 
     // determine the current operation's label
     getAction() {
-        return operator.getAttribute("label");
+        return this.operator.getAttribute("label");
     }
 
     // perform a calculation based on the currently selected operation
