@@ -13,7 +13,11 @@ class Calculator {
 
     // determine the current operation's label
     getAction() {
-        return this.operator.getAttribute("label");
+        let radioButton = document.getElementsByName("option");
+        for(i=0; i < radioButton.length; i++) {
+            if(radioButton[i].checked) {
+                return radioButton[i].getAttribute("label");           
+            }
     }
 
     // perform a calculation based on the currently selected operation
