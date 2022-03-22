@@ -6,7 +6,7 @@
         <script type="text/javascript" src="calculator.js"></script>
         <link rel="stylesheet" type="text/css" href="calculator.css" />
     </head>
-    <body>
+    <body onload="setFocus()">
         <div id="content">
             <form id="calculator">
                 <div id="input">
@@ -20,13 +20,13 @@
                 </div>
                 <div id="radio-buttons">
                     <input type="radio" id="add" name="option" value="Add" checked="" onclick="getOperator(); CreateCalculator()">
-                        <label for="add-button">Add</label>
+                        <label for="add">Add</label>
                     <input type="radio" id="subtract" name="option" value="Subtract" onclick="getOperator(); CreateCalculator()">
-                        <label for="subtract-button">Subtract</label>
+                        <label for="subtract">Subtract</label>
                     <input type="radio" id="multiply" name="option" value="Multiply" onclick="getOperator(); CreateCalculator()">
-                        <label for="multipy-button">Multiply</label>
+                        <label for="multiply">Multiply</label>
                     <input type="radio" id="divid" name="option" value="Divide" onclick="getOperator(); CreateCalculator()">
-                        <label for="divide-button">Divide</label>
+                        <label for="divid">Divide</label>
                 </div>
                 <div id = "buttons">
                     <button type="button" id="equals" class="hover-buttons" onclick="calculate()">

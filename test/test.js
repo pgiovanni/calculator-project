@@ -114,7 +114,7 @@ describe("Calculator Test Suite", () => {
     });
 
     describe("Test Division logic", function () {
-        it("Division operator passed in, calls the multiply method on operate.", function () {
+        it("Division operator passed in, calls the divide method on operate.", function () {
             //Arrange
             var calc = new Calculator(1, 1, "divide");
             var mock = sinon.mock(calc);

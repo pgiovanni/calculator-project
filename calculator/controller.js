@@ -19,7 +19,6 @@ function calculate() {
         }
     }
 
-    console.log(operator);
     if(operator === "add") {
         let sum = numberOne + numberTwo;
         updateResultText(sum);
@@ -33,9 +32,19 @@ function calculate() {
     }
     if(operator === "divid") {
         let division = numberOne / numberTwo;
-        updateResultText(division);
+        if(numberTwo == 0) {
+            document.getElementById("result-text").innerHTML = ("Cannot divide by zero! Please re-enter the second number.")
+        }
+        else {
+            updateResultText(division);
+        }
     }
 }
+
+function setFocus() {
+    document.getElementById("first").focus();
+}
+
 
 /**
  * set the text in the result section of the UI
